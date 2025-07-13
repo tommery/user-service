@@ -13,21 +13,12 @@ public class UserController {
     
     @GetMapping("/git")
     public String git() {
-        return "CI/CD succesfully completed!!!  take 14";
+        return "CI/CD succesfully completed!!!";
     }
     
     @GetMapping("/oz")
     public String oz() {
-        return "Oz is the king";
+        return "עוז המלך";
     }
     
-    @GetMapping("/tomer")
-    public String tomer() {
-        return "Tomer is the king's father";
-    }
-    
-    @GetMapping("/sarit")
-    public String sarit() {
-        return "Sarit is the king's mother";
-    }
 }
