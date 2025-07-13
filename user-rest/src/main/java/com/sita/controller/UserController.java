@@ -25,4 +25,9 @@ public class UserController {
     public String tomer() {
         return "Tomer is the king's father";
     }
+    
+    @GetMapping("/sarit")
+    public String sarit() {
+        return "Sarit is the king's mother";
+    }
 }
