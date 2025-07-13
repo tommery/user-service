@@ -10,4 +10,9 @@ public class UserController {
     public String hello() {
         return "Hello from User Service!";
     }
+    
+    @GetMapping("/git")
+    public String git() {
+        return "CI/CD succesfully completed";
+    }
 }
