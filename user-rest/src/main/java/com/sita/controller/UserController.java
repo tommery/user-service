@@ -13,6 +13,6 @@ public class UserController {
     
     @GetMapping("/git")
     public String git() {
-        return "CI/CD succesfully completed!!!  take 5";
+        return "CI/CD succesfully completed!!!  take 6";
     }
 }
