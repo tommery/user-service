@@ -20,4 +20,9 @@ public class UserController {
     public String oz() {
         return "Oz is the king";
     }
+    
+    @GetMapping("/tomer")
+    public String tomer() {
+        return "Tomer is the king's father";
+    }
 }
