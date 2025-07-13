@@ -15,4 +15,9 @@ public class UserController {
     public String git() {
         return "CI/CD succesfully completed!!!  take 10";
     }
+    
+    @GetMapping("/oz")
+    public String oz() {
+        return "Oz is the king";
+    }
 }
