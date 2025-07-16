@@ -6,8 +6,9 @@ public class User {
 
     public User() { }
 
-	public User(Long id, String string) {
-		// TODO Auto-generated constructor stub
+	public User(String name) {
+		this.id = 1L;
+		this.name = name;
 	}
 
 	public Long getId() {

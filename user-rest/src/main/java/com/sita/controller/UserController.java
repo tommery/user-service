@@ -30,7 +30,7 @@ public class UserController {
     
     @GetMapping("/createUser")
     public String createUser(@RequestParam String name) {
-    	User user = new User(1L, name);
+    	User user = new User(name);
     	User created = userManager.createUser(user);
         return "Welcome user "+created.getName()+ "!!!";
     }
