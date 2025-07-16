@@ -2,8 +2,10 @@ package com.sita.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.sita.domain.User;
 import com.sita.usermanager.UserManager;
 
 @RestController
@@ -24,6 +26,13 @@ public class UserController {
     @GetMapping("/git")
     public String git() {
         return "CI/CD succesfully completed!!! take 6";
+    }
+    
+    @GetMapping("/createUser")
+    public String createUser(@RequestParam String name) {
+    	User user = new User(1L, name);
+    	User created = userManager.createUser(user);
+        return "Welcome user "+created.getName()+ "!!!";
     }
     
     @GetMapping("/oz")
