@@ -18,6 +18,8 @@
   <modules>
     <module>user-rest</module>
     <module>user-manager</module>
+    <module>user-persistence</module>
+    <module>user-domain</module>
   </modules>
 
   <properties>
