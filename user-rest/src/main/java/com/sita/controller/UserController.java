@@ -32,7 +32,7 @@ public class UserController {
     public String createUser(@RequestParam String name) {
     	User user = new User(name);
     	User created = userManager.createUser(user);
-        return "Welcome user "+created.getName()+ "!!!";
+        return "Welcome user "+created.getUserName()+ "!!!";
     }
     
     @GetMapping("/oz")

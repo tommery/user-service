@@ -2,13 +2,13 @@ package com.sita.domain;
 
 public class User {
 	private Long id;
-    private String name;
+    private String userName;
 
     public User() { }
 
 	public User(String name) {
 		this.id = 1L;
-		this.name = name;
+		this.userName = name;
 	}
 
 	public Long getId() {
@@ -19,13 +19,15 @@ public class User {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getUserName() {
+		return userName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
+
+	
     
     
 }
