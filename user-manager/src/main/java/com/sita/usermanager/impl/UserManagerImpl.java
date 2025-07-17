@@ -10,7 +10,7 @@ public class UserManagerImpl implements UserManager {
 
 	@Override
 	public User findUserById(Long id) {
-		return new User(id, "TempUser");
+		return new User("TempUser");
 	}
 
 	@Override
